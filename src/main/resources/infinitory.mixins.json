@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "furgl.infinitory.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  	"inventory.PlayerInventoryMixin",
+  	"inventory.PlayerScreenHandlerMixin",
+  	"inventory.ScreenHandlerMixin",
+  	"inventory.SlotMixin",
+  	"accessors.SlotAccessor",
+  	"accessors.ScreenHandlerAccessor",
+  	"items.ItemStackMixin",
+  	"network.PacketByteBufMixin",
+  	"network.ServerPlayNetworkHandlerMixin",
+  	"network.ServerPlayerEntityMixin"
+    ],
+  "client": [
+  	"items.ItemRendererMixin",
+  	"render.CreativeInventoryScreenMixin",
+  	"render.MouseMixin",
+  	"render.HandledScreenMixin",
+  	"render.InventoryScreenMixin",
+  	"network.MinecraftClientMixin"
+    ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

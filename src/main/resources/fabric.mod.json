@@ -1,38 +1,46 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "infinitory",
+  "version": "1.2.0",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Infinitory",
+  "description": "Infinite inventory and stack size!",
   "authors": [
-    "Me!"
+    "Furgl"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/infinitory",
+    "issues": "https://github.com/Furgl/Infinitory/issues",
+    "sources": "https://github.com/Furgl/Infinitory"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "The MIT License (MIT)",
+  "icon": "assets/infinitory/logo.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "furgl.infinitory.Infinitory"
+    ],
+    "client": [
+    	"furgl.infinitory.Infinitory"
+    ],
+    "modmenu": [
+        "furgl.infinitory.impl.dependencies.ClothConfigModMenuDependency"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "infinitory.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.11",
-    "fabric-api": "*",
-    "minecraft": "~1.19.3",
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.19.2",
     "java": ">=17"
   },
   "suggests": {
     "another-mod": "*"
-  }
+  },
+  "accessWidener" : "infinitory.accesswidener"
 }
