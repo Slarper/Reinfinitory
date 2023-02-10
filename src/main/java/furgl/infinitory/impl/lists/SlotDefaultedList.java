@@ -141,11 +141,11 @@ public class SlotDefaultedList<E extends Slot> extends DefaultedList<E> {
 		// add extra crafting slots up to 3x3
 
 		// compatible with com.ineffa.wondrouswilds.util.fakeplayer.FakePlayerEntity, which .getAbilities() is null
-		if (handler.getPlayer().getAbilities() == null) {
-			return;
-		}
 
-		if (Config.expandedCrafting && handler != null && !handler.getPlayer().getAbilities().creativeMode) {
+		if (Config.expandedCrafting
+				&& handler != null
+				&& (handler.getPlayer().getAbilities() != null)
+				&& !handler.getPlayer().getAbilities().creativeMode) {
 			// add first row
 			if (this.addedCraftingSlots.isEmpty() && slot instanceof CraftingResultSlot) {
 				int x = Utils.CRAFTING_SLOTS_INPUT.getLeft();
