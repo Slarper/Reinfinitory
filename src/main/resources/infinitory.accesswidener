@@ -5,3 +5,5 @@ mutable field net/minecraft/client/gui/screen/ingame/CreativeInventoryScreen$Cre
 accessible method net/minecraft/client/gui/screen/Screen addDrawableChild (Lnet/minecraft/client/gui/Element;)Lnet/minecraft/client/gui/Element;
 accessible field dev/emi/trinkets/api/SlotGroup slotId I
 mutable field dev/emi/trinkets/api/SlotGroup slotId I
+
+accessible field net/minecraft/server/network/ServerPlayNetworkHandler creativeItemDropThreshold I
